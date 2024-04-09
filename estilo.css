@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Jockey One", sans-serif;
+}
+
+:root{
+    --primary: #2B0F7B;
+    --secondary: #B70000;
+    --black: #000;
+    --white: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5rem solid var(--primary);
+    height: 7rem;
+    width: 100%;
+    background-color: #000;
+}
+header figure {
+    display: flex;
+    align-items: center;
+}
+header figure img {
+    padding: 0.3rem;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+header nav a {
+    margin-right: 14rem;
+    text-decoration: none;
+    color: var(--white);
+}
+header nav a:hover {
+    font-weight: bold;
+}
+header h1{
+    color:#B70000;
+    font-size: 45px;
+    font-family: "Jockey One", sans-serif;
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+}
+
+#logo {
+    position: absolute;
+    left: 24rem;
+    top: 1rem;
+}
+#logo:hover {
+    filter: grayscale(20%) brightness(50%);
+}
+
+body {
+    background-color: #2B0F7B;
+}
+
+main {
+    min-height: calc(100vh - 8.5rem);
+    align-items: center;
+    display: flex;
+}
+main.index section {
+    display: flex;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    flex-wrap: wrap; 
+    gap: 20px;
+    margin-left: 80px;
+}
+.destaques {
+    flex: 1 0 33%; 
+    padding: 10px; 
+    box-sizing: border-box;
+    width: 500px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.resultados {
+    flex: 1 0 33%; 
+    padding: 10px; 
+    box-sizing: border-box;
+    width: 500px;
+    height: auto;
+    margin-right: 20px; 
+}
+
+.proximos {
+    height: 180px;
+    width: auto;
+}
+    
+#resultados:hover {
+    filter: grayscale(20%) brightness(50%);
+}
+#destaques:hover {
+    filter: grayscale(20%) brightness(50%);
+}
+
+main.index aside img {
+    position:absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto
+}
+
+footer {
+    background-color: #10003C;
+    height: 3rem;
+}
+footer p {
+    display: inline-block;
+    color: #fff;
+    margin-left: 0;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 13px;
+    display: inline-block;
+}
